@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Obesity based BMI index</h1>
+
+		<form action="/obesity" method="post">
+
+			{% if score and score > 0 %}
+			<div class="success"> At a height of {{ height }} and weight of {{ weight }} the obesity score is {{score}}.</div>
+			{% else %}
+			<div class="error" >No score could be calculated</div>
+			{% endif %}
+
+			<div class="input">
+				<label for="height">Height</label>
+				<input type="number" name="height" id="height" placeholder="height">
+			</div>
+
+			<div class="input">
+				<label for="weight">Weight</label>
+				<input type="number" name="weight" id="weight" placeholder="weight">
+			</div>
+			<input type="submit" value="Check">
+		</form>
+	</div>
+</body>
+
+</html>

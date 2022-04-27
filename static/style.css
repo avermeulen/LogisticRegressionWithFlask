@@ -1,0 +1,37 @@
+body {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	background-color: lightblue;
+	/* color: aqua; */
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.input {
+	margin: 1em;
+	/* padding: 1em; */
+}
+
+.input input[type="number"] {
+	padding: 1em;
+}
+
+.input input[type="submit"] {
+	padding: 1em;
+}
+
+.error {
+	color: crimson;
+}
+
+.success {
+	color: green;
+}
+
+.input > label {
+	display: inline-block;
+	width: 6em;
+	font-weight: strong;
+}
