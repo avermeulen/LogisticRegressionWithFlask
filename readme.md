@@ -10,4 +10,24 @@ flask run
 
 Goto `http://localhost:5000` in the browser.
 
-Heroku deploy is work in progress.
+## Deployment
+
+The app is deployed [here](https://the-logistic-regression-app.herokuapp.com/obesity).
+
+The API is here:
+
+```
+https://the-logistic-regression-app.herokuapp.com/api/obesity?height=170&weight=60
+```
+
+## Useful links:
+
+* https://www.jcchouinard.com/deploy-a-flask-app-on-heroku/
+
+Deploy commands:
+
+```
+conda create --name logic-regression-with-flask python=3.9.7
+conda activate logic-regression-with-flask
+```
+
